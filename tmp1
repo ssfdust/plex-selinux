@@ -1,0 +1,13 @@
+total 25400
+-rwxr-xr-x.  1 root root   686392 Jun 17 00:28 CrashUploader
+drwxr-xr-x.  2 root root       33 Jun 22 18:12 etc
+drwxr-xr-x.  3 root root     4096 Jun 22 18:12 lib
+-rwxr-xr-x.  1 root root   267240 Jun 17 00:13 Plex Commercial Skipper
+-rwxr-xr-x.  1 root root   113584 Jun 17 00:13 Plex Media Fingerprinter
+-rwxr-xr-x.  1 root root   651048 Jun 17 00:13 Plex Relay
+-rw-rw-r--.  1 root root     1095 Jun 17 01:01 plexrsync.pp
+-rwxr-xr-x.  1 root root    10992 Jun 17 00:13 Plex Script Host
+-rwxr-xr-x.  1 root root    10536 Jun 17 00:13 Plex SQLite
+-rwxr-xr-x.  1 root root   302768 Jun 17 00:13 Plex Transcoder
+-rwxr-xr-x.  1 root root  2551656 Jun 17 00:13 Plex Tuner Service
+drwxr-xr-x. 10 root root     4096 Jun 22 18:12 Resources

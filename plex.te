@@ -119,14 +119,14 @@ can_exec(plex_t, plex_tmpfs_t)
 #
 tunable_policy(`plex_access_all_ro',`
         fs_read_noxattr_fs_files(plex_t)
-        auth_read_all_dirs_except_shadow(plex_t)
-        auth_read_all_symlinks_except_shadow(plex_t)
-        auth_read_all_files_except_shadow(plex_t)
+        files_list_non_auth_dirs(plex_t)
+        files_read_non_auth_symlinks(plex_t)
+        files_read_non_auth_files(plex_t)
 ')
 
 tunable_policy(`plex_access_all_rw',`
         fs_read_noxattr_fs_files(plex_t)
-        auth_manage_all_files_except_shadow(plex_t)
+        files_manage_non_auth_files(plex_t)
 ')
 
 tunable_policy(`allow_plex_anon_write',`
@@ -134,8 +134,8 @@ tunable_policy(`allow_plex_anon_write',`
 ')
 
 tunable_policy(`allow_plex_list_all_dirs',`
-        auth_read_all_dirs_except_shadow(plex_t)
-	auth_read_all_symlinks_except_shadow(plex_t)
+        files_list_non_auth_dirs(plex_t)
+	files_read_non_auth_symlinks(plex_t)
 	files_dontaudit_getattr_all_files(plex_t)
 ')
 
